@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@mipmap/bk">
+
+    <TableLayout
+        android:id="@+id/endtitle"
+        android:layout_width="300dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="30dp"
+        android:background="@mipmap/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:text="中大辩论赛计时器"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </TableLayout>
+    <Button
+        app:layout_constraintTop_toBottomOf="@+id/endtitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="330dp"
+        android:layout_height="100dp"
+        android:background="@mipmap/dbframe"
+        android:text="~~~~本场比赛结束~~~~"
+        android:textSize="20dp" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/endtitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/mysun"
+        android:src="@mipmap/sun"/>
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintTop_toBottomOf="@+id/endtitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="115dp"
+        android:id="@+id/mymoon"
+        android:src="@mipmap/moon"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="下一场"
+        android:id="@+id/endimg"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="35dp"
+        android:background="@mipmap/dbstyle"/>
+
+</android.support.constraint.ConstraintLayout>
